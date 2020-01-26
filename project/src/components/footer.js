@@ -18,6 +18,7 @@ const Footer = props => {
           src="https://www.iconninja.com/files/604/580/1001/github-development-code-coding-program-programming-icon.svg"
           id="github"
           className="social-img"
+          alt='Github'
         ></img>
       </a>
       <a href="https://www.linkedin.com/in/ashikur-rahman-42167785/" target="blank">
@@ -25,12 +26,14 @@ const Footer = props => {
           src="https://www.searchpng.com/wp-content/uploads/2019/03/Linkedin-Icon-PNG-1.png"
           id="linkedIn"
           className="social-img"
+          alt='LinkedIn'
         ></img>
       </a>
       <a href="https://www.instagram.com/a.sh.money/" target="blank">
         <img
           src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png"
           id="instagram"
+          alt='IG'
           className="social-img"
         ></img>
       </a>

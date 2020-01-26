@@ -1,4 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faLaptopCode} />
+
 
 const Project = props => {
   return (
@@ -7,15 +12,15 @@ const Project = props => {
         <h1 className='project-title'>{props.name}</h1>
         <p>{props.description}</p>
         <div className="img-button-cont">
-          <div class="browser-mockup">
-            <img src={props.img} className="project-pictures" />
+          <div class="mac-setup">
+          <a href={props.url} target="_blank"><img src={props.img} alt='project' className="project-pictures" /></a>
           </div>
           <a href={props.url} target="_blank">
-            See {props.name} Live!
+            <span className='icon-fa'>{element}</span>
           </a>
         </div>
         <div className="language-wrapper">
-          <h3>CREATED WITH</h3>
+          <h3>SKILLS USED</h3>
           <div className="languages">
             {props.languages.map(lang => (
               <p className="language">{lang}</p>
